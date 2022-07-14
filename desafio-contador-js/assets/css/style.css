@@ -28,7 +28,18 @@ button {
     display: flex;
 }
 
+#counter2{
+    display: flex;
+}
+
 #currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+}
+
+#currentNumber_red{
     display: flex;
     align-items: center;
     margin: 0 20px;

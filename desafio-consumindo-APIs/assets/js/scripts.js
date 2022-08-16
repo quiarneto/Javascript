@@ -1,11 +1,11 @@
-const BASE_URL = 'https://api.thecatapi.com/v1/images/search/';
+const BASE_URL = "https://api.thecatapi.com/v1/images/search/";
 
 const getCats = async () => {
 	try {
 		const data = await fetch(BASE_URL);
 		const json = await data.json();
         console.log(json.id);
-		return json.id;
+		return json[0].url;
 	} catch (e) {
 		console.log(e.message);
 	}
